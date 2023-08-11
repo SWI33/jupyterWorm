@@ -35,7 +35,7 @@ def send_command_to_terminal(ip, port, terminal_id, command):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Send commands to a remote terminal over WebSocket.")
-    parser.add_argument("-i", "--ip", help="IP address of the terminal server", default="143.198.160.142")
+    parser.add_argument("-i", "--ip", help="IP address of the terminal server", default="10.10.10.10")
     parser.add_argument("-p", "--port", help="Port of the terminal server", default="30000")
     parser.add_argument("-t", "--terminal_id", help="ID of the terminal session", default="1")
     parser.add_argument("-c", "--command", help="Command to execute", required=True)
